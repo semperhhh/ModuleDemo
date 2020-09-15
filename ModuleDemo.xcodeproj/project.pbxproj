@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,8 @@
 		DA02419B250FC2BB00F25A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA02419A250FC2BB00F25A7D /* Assets.xcassets */; };
 		DA02419E250FC2BB00F25A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA02419C250FC2BB00F25A7D /* LaunchScreen.storyboard */; };
 		DA0241A1250FC2BB00F25A7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0241A0250FC2BB00F25A7D /* main.m */; };
-		DA0241AD250FC58600F25A7D /* NSObject+ZPH.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0241AC250FC58600F25A7D /* NSObject+ZPH.m */; };
+		DA3B82FD251070CA0009FCA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B82FC251070CA0009FCA4 /* SwiftViewController.swift */; };
+		DA3B8301251071CD0009FCA4 /* OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3B8300251071CD0009FCA4 /* OCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +34,11 @@
 		DA02419D250FC2BB00F25A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA02419F250FC2BB00F25A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA0241A0250FC2BB00F25A7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DA0241AB250FC58600F25A7D /* NSObject+ZPH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZPH.h"; sourceTree = "<group>"; };
-		DA0241AC250FC58600F25A7D /* NSObject+ZPH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZPH.m"; sourceTree = "<group>"; };
 		DA0241AE250FC61200F25A7D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DA3B82FC251070CA0009FCA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftViewController.swift; path = ModuleDemo/Extension/SwiftViewController.swift; sourceTree = SOURCE_ROOT; };
+		DA3B82FE2510714C0009FCA4 /* ModuleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModuleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA3B82FF251071CD0009FCA4 /* OCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCViewController.h; path = ModuleDemo/OCViewController.h; sourceTree = SOURCE_ROOT; };
+		DA3B8300251071CD0009FCA4 /* OCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCViewController.m; path = ModuleDemo/OCViewController.m; sourceTree = SOURCE_ROOT; };
 		F2AE442B858E0439A4818118 /* Pods-ModuleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleDemo.debug.xcconfig"; path = "Target Support Files/Pods-ModuleDemo/Pods-ModuleDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +108,7 @@
 				DA02419F250FC2BB00F25A7D /* Info.plist */,
 				DA0241A0250FC2BB00F25A7D /* main.m */,
 				DA0241AE250FC61200F25A7D /* PrefixHeader.pch */,
+				DA3B82FE2510714C0009FCA4 /* ModuleDemo-Bridging-Header.h */,
 			);
 			path = ModuleDemo;
 			sourceTree = "<group>";
@@ -112,8 +116,6 @@
 		DA0241A8250FC54700F25A7D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DA0241AB250FC58600F25A7D /* NSObject+ZPH.h */,
-				DA0241AC250FC58600F25A7D /* NSObject+ZPH.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -128,6 +130,7 @@
 		DA0241AF250FC86100F25A7D /* SwiftModule */ = {
 			isa = PBXGroup;
 			children = (
+				DA3B82FC251070CA0009FCA4 /* SwiftViewController.swift */,
 			);
 			path = SwiftModule;
 			sourceTree = "<group>";
@@ -135,6 +138,8 @@
 		DA0241B0250FC86E00F25A7D /* OCModule */ = {
 			isa = PBXGroup;
 			children = (
+				DA3B82FF251071CD0009FCA4 /* OCViewController.h */,
+				DA3B8300251071CD0009FCA4 /* OCViewController.m */,
 			);
 			path = OCModule;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				TargetAttributes = {
 					DA02418A250FC2BA00F25A7D = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -255,8 +261,9 @@
 			files = (
 				DA024196250FC2BA00F25A7D /* ViewController.m in Sources */,
 				DA024190250FC2BA00F25A7D /* AppDelegate.m in Sources */,
-				DA0241AD250FC58600F25A7D /* NSObject+ZPH.m in Sources */,
+				DA3B8301251071CD0009FCA4 /* OCViewController.m in Sources */,
 				DA0241A1250FC2BB00F25A7D /* main.m in Sources */,
+				DA3B82FD251070CA0009FCA4 /* SwiftViewController.swift in Sources */,
 				DA024193250FC2BA00F25A7D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +405,7 @@
 			baseConfigurationReference = F2AE442B858E0439A4818118 /* Pods-ModuleDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LQZWC5F6U;
 				GCC_PREFIX_HEADER = ./ModuleDemo/PrefixHeader.pch;
@@ -408,6 +416,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zph.ModuleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./ModuleDemo/ModuleDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -417,6 +428,7 @@
 			baseConfigurationReference = 996B8CCBF9373766DCC88307 /* Pods-ModuleDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LQZWC5F6U;
 				GCC_PREFIX_HEADER = ./ModuleDemo/PrefixHeader.pch;
@@ -427,6 +439,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zph.ModuleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./ModuleDemo/ModuleDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

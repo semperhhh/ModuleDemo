@@ -12,5 +12,8 @@ target 'ModuleDemo' do
 
   pod 'Masonry', '~> 1.1.0'
   pod 'SnapKit', '~> 5.0.1'
+  
+#  local
+  pod 'OCTool', :path => './LocalLib/OCTool'
 
 end

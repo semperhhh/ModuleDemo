@@ -16,12 +16,14 @@ PODS:
     - AFNetworking/NSURLSession
   - Alamofire (5.2.2)
   - Masonry (1.1.0)
+  - OCTool (0.0.1)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0.1)
   - Alamofire (~> 5.2)
   - Masonry (~> 1.1.0)
+  - OCTool (from `./LocalLib/OCTool`)
   - SnapKit (~> 5.0.1)
 
 SPEC REPOS:
@@ -31,12 +33,17 @@ SPEC REPOS:
     - Masonry
     - SnapKit
 
+EXTERNAL SOURCES:
+  OCTool:
+    :path: "./LocalLib/OCTool"
+
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OCTool: 79696cda49f267f31f7e1031c95a6bcb7a905d25
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: e775abdf1799672bc929e8285e6f3e7dcb7c85cd
+PODFILE CHECKSUM: 9db7c12c8d7800d93162eff2b3406987fad0ebac
 
 COCOAPODS: 1.9.3

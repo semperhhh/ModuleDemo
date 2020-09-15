@@ -1,0 +1,22 @@
+{
+  "name": "OCTool",
+  "version": "0.0.1",
+  "summary": "OCTool",
+  "description": "octool test",
+  "homepage": "http://www.semperhhh.cn",
+  "license": "LICENSE",
+  "authors": {
+    "zphui5409@sina.com": "zphui5409@sina.com"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.0.1"
+  },
+  "source_files": "*.{h,m}",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

@@ -1,0 +1,6 @@
+framework module OCTool {
+  umbrella header "OCTool-umbrella.h"
+
+  export *
+  module * { export * }
+}
