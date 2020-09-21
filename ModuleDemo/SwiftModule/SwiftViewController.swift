@@ -9,6 +9,8 @@
 import UIKit
 
 class SwiftViewController: UIViewController {
+    
+    var userId: NSString?
 
     override func viewDidLoad() {
         super.viewDidLoad()
