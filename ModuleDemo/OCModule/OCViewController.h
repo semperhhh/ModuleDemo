@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OCViewController : UIViewController
-
+/// 会员id
+@property (nonatomic, strong, nonnull)NSString *userId;
 @end
 
 NS_ASSUME_NONNULL_END

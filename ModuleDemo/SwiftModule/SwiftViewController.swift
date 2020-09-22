@@ -7,19 +7,33 @@
 //
 
 import UIKit
+import CTMediator
 
 class SwiftViewController: UIViewController {
     
-    var userId: NSString?
+    /// 会员id
+    @objc var userId: String?
+    @objc var navigationTitle: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.view.backgroundColor = UIColor.yellow
-    }
     
+        self.initStyle()
+        
+        self.navigationItem.title = self.navigationTitle;
+        print("swift userid = ", self.userId ?? "nil");
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let controller = CTMediator.sharedInstance().A_showSwift(dic: ["userId": "swift_mediator"]) { (result) in
+            print("swift_mediator - ", result);
+        }
+        
+        self.navigationController?.pushViewController(controller!, animated: true)
+    }
 
     /*
     // MARK: - Navigation

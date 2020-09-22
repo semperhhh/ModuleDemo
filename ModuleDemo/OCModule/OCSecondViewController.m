@@ -1,25 +1,24 @@
 //
-//  OCViewController.m
+//  OCSecondViewController.m
 //  ModuleDemo
 //
-//  Created by zph on 2020/9/15.
+//  Created by zph on 2020/9/21.
 //  Copyright © 2020 zph. All rights reserved.
 //
 
-#import "OCViewController.h"
+#import "OCSecondViewController.h"
 #import "UIViewController+Style.h"
 
-@interface OCViewController ()
+@interface OCSecondViewController ()
 
 @end
 
-@implementation OCViewController
+@implementation OCSecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
- 
-    NSLog(@"ocviewcontroller userId = %@", self.userId);
+    
     [self initWithStyle];
 }
 

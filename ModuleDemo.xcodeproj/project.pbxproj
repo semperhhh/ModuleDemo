@@ -16,6 +16,17 @@
 		DA02419E250FC2BB00F25A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA02419C250FC2BB00F25A7D /* LaunchScreen.storyboard */; };
 		DA0241A1250FC2BB00F25A7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0241A0250FC2BB00F25A7D /* main.m */; };
 		DA20D1382513542400693269 /* ZPHLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA20D1372513542400693269 /* ZPHLineView.m */; };
+		DA313E9025188C8C009A6442 /* OCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA313E8F25188C8C009A6442 /* OCFirstViewController.m */; };
+		DA313E9425188C98009A6442 /* OCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA313E9325188C98009A6442 /* OCSecondViewController.m */; };
+		DA313E9825188CA2009A6442 /* OCThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA313E9725188CA2009A6442 /* OCThirdViewController.m */; };
+		DA313E9C25188DD3009A6442 /* UIViewController+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = DA313E9B25188DD3009A6442 /* UIViewController+Style.m */; };
+		DA313EA125188FB7009A6442 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA313EA025188FB7009A6442 /* ViewControllerExtension.swift */; };
+		DA313EC725199C2E009A6442 /* MediatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA313EC625199C2E009A6442 /* MediatorViewController.m */; };
+		DA313ECD25199E5A009A6442 /* Target_Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA313ECC25199E5A009A6442 /* Target_Mediator.m */; };
+		DA313EF52519E1BE009A6442 /* CTMediator+Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA313EF42519E1BE009A6442 /* CTMediator+Mediator.m */; };
+		DA313F062519FB91009A6442 /* SwiftMediatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA313F052519FB91009A6442 /* SwiftMediatorViewController.swift */; };
+		DA313F092519FC2A009A6442 /* Target_SwiftMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA313F082519FC2A009A6442 /* Target_SwiftMediator.swift */; };
+		DA313F0C2519FDF1009A6442 /* Mediator_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA313F0B2519FDF1009A6442 /* Mediator_Extension.swift */; };
 		DA3B82FD251070CA0009FCA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B82FC251070CA0009FCA4 /* SwiftViewController.swift */; };
 		DA3B8301251071CD0009FCA4 /* OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3B8300251071CD0009FCA4 /* OCViewController.m */; };
 /* End PBXBuildFile section */
@@ -38,6 +49,24 @@
 		DA0241AE250FC61200F25A7D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DA20D1362513542400693269 /* ZPHLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPHLineView.h; sourceTree = "<group>"; };
 		DA20D1372513542400693269 /* ZPHLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPHLineView.m; sourceTree = "<group>"; };
+		DA313E8E25188C8C009A6442 /* OCFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCFirstViewController.h; sourceTree = "<group>"; };
+		DA313E8F25188C8C009A6442 /* OCFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCFirstViewController.m; sourceTree = "<group>"; };
+		DA313E9225188C98009A6442 /* OCSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSecondViewController.h; sourceTree = "<group>"; };
+		DA313E9325188C98009A6442 /* OCSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCSecondViewController.m; sourceTree = "<group>"; };
+		DA313E9625188CA2009A6442 /* OCThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCThirdViewController.h; sourceTree = "<group>"; };
+		DA313E9725188CA2009A6442 /* OCThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCThirdViewController.m; sourceTree = "<group>"; };
+		DA313E9A25188DD3009A6442 /* UIViewController+Style.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Style.h"; sourceTree = "<group>"; };
+		DA313E9B25188DD3009A6442 /* UIViewController+Style.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Style.m"; sourceTree = "<group>"; };
+		DA313EA025188FB7009A6442 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		DA313EC525199C2E009A6442 /* MediatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorViewController.h; sourceTree = "<group>"; };
+		DA313EC625199C2E009A6442 /* MediatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorViewController.m; sourceTree = "<group>"; };
+		DA313ECB25199E5A009A6442 /* Target_Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Mediator.h; sourceTree = "<group>"; };
+		DA313ECC25199E5A009A6442 /* Target_Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Mediator.m; sourceTree = "<group>"; };
+		DA313EF32519E1BE009A6442 /* CTMediator+Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+Mediator.h"; sourceTree = "<group>"; };
+		DA313EF42519E1BE009A6442 /* CTMediator+Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+Mediator.m"; sourceTree = "<group>"; };
+		DA313F052519FB91009A6442 /* SwiftMediatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMediatorViewController.swift; sourceTree = "<group>"; };
+		DA313F082519FC2A009A6442 /* Target_SwiftMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_SwiftMediator.swift; sourceTree = "<group>"; };
+		DA313F0B2519FDF1009A6442 /* Mediator_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator_Extension.swift; sourceTree = "<group>"; };
 		DA3B82FC251070CA0009FCA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftViewController.swift; path = ModuleDemo/SwiftModule/SwiftViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA3B82FE2510714C0009FCA4 /* ModuleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModuleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA3B82FF251071CD0009FCA4 /* OCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCViewController.h; path = ModuleDemo/OCModule/OCViewController.h; sourceTree = SOURCE_ROOT; };
@@ -95,11 +124,11 @@
 		DA02418D250FC2BA00F25A7D /* ModuleDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DA20A23925135B290003D8D9 /* Tool */,
+				DA313F002519FB48009A6442 /* SwiftMediator */,
+				DA313EC925199C38009A6442 /* Mediator */,
 				DA20A23825135B1C0003D8D9 /* OCModule */,
 				DA20A23725135B0A0003D8D9 /* SwiftModule */,
 				DA20D1352513540200693269 /* OCUIKit */,
-				DA0241A8250FC54700F25A7D /* Extension */,
 				DA02418E250FC2BA00F25A7D /* AppDelegate.h */,
 				DA02418F250FC2BA00F25A7D /* AppDelegate.m */,
 				DA024191250FC2BA00F25A7D /* SceneDelegate.h */,
@@ -117,17 +146,11 @@
 			path = ModuleDemo;
 			sourceTree = "<group>";
 		};
-		DA0241A8250FC54700F25A7D /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		DA20A23725135B0A0003D8D9 /* SwiftModule */ = {
 			isa = PBXGroup;
 			children = (
 				DA3B82FC251070CA0009FCA4 /* SwiftViewController.swift */,
+				DA313EA025188FB7009A6442 /* ViewControllerExtension.swift */,
 			);
 			path = SwiftModule;
 			sourceTree = "<group>";
@@ -137,15 +160,16 @@
 			children = (
 				DA3B82FF251071CD0009FCA4 /* OCViewController.h */,
 				DA3B8300251071CD0009FCA4 /* OCViewController.m */,
+				DA313E8E25188C8C009A6442 /* OCFirstViewController.h */,
+				DA313E8F25188C8C009A6442 /* OCFirstViewController.m */,
+				DA313E9225188C98009A6442 /* OCSecondViewController.h */,
+				DA313E9325188C98009A6442 /* OCSecondViewController.m */,
+				DA313E9625188CA2009A6442 /* OCThirdViewController.h */,
+				DA313E9725188CA2009A6442 /* OCThirdViewController.m */,
+				DA313E9A25188DD3009A6442 /* UIViewController+Style.h */,
+				DA313E9B25188DD3009A6442 /* UIViewController+Style.m */,
 			);
 			path = OCModule;
-			sourceTree = "<group>";
-		};
-		DA20A23925135B290003D8D9 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tool;
 			sourceTree = "<group>";
 		};
 		DA20D1352513540200693269 /* OCUIKit */ = {
@@ -155,6 +179,29 @@
 				DA20D1372513542400693269 /* ZPHLineView.m */,
 			);
 			path = OCUIKit;
+			sourceTree = "<group>";
+		};
+		DA313EC925199C38009A6442 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				DA313EC525199C2E009A6442 /* MediatorViewController.h */,
+				DA313EC625199C2E009A6442 /* MediatorViewController.m */,
+				DA313ECB25199E5A009A6442 /* Target_Mediator.h */,
+				DA313ECC25199E5A009A6442 /* Target_Mediator.m */,
+				DA313EF32519E1BE009A6442 /* CTMediator+Mediator.h */,
+				DA313EF42519E1BE009A6442 /* CTMediator+Mediator.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		DA313F002519FB48009A6442 /* SwiftMediator */ = {
+			isa = PBXGroup;
+			children = (
+				DA313F052519FB91009A6442 /* SwiftMediatorViewController.swift */,
+				DA313F082519FC2A009A6442 /* Target_SwiftMediator.swift */,
+				DA313F0B2519FDF1009A6442 /* Mediator_Extension.swift */,
+			);
+			path = SwiftMediator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,12 +320,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA024196250FC2BA00F25A7D /* ViewController.m in Sources */,
+				DA313EC725199C2E009A6442 /* MediatorViewController.m in Sources */,
+				DA313EF52519E1BE009A6442 /* CTMediator+Mediator.m in Sources */,
 				DA024190250FC2BA00F25A7D /* AppDelegate.m in Sources */,
+				DA313ECD25199E5A009A6442 /* Target_Mediator.m in Sources */,
 				DA3B8301251071CD0009FCA4 /* OCViewController.m in Sources */,
+				DA313E9C25188DD3009A6442 /* UIViewController+Style.m in Sources */,
+				DA313F062519FB91009A6442 /* SwiftMediatorViewController.swift in Sources */,
+				DA313E9025188C8C009A6442 /* OCFirstViewController.m in Sources */,
 				DA0241A1250FC2BB00F25A7D /* main.m in Sources */,
 				DA20D1382513542400693269 /* ZPHLineView.m in Sources */,
+				DA313E9425188C98009A6442 /* OCSecondViewController.m in Sources */,
+				DA313EA125188FB7009A6442 /* ViewControllerExtension.swift in Sources */,
 				DA3B82FD251070CA0009FCA4 /* SwiftViewController.swift in Sources */,
+				DA313F0C2519FDF1009A6442 /* Mediator_Extension.swift in Sources */,
+				DA313E9825188CA2009A6442 /* OCThirdViewController.m in Sources */,
 				DA024193250FC2BA00F25A7D /* SceneDelegate.m in Sources */,
+				DA313F092519FC2A009A6442 /* Target_SwiftMediator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
