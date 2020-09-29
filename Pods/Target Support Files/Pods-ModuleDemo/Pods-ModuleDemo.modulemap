@@ -1,4 +1,4 @@
-framework module Pods_ModuleDemo {
+module Pods_ModuleDemo {
   umbrella header "Pods-ModuleDemo-umbrella.h"
 
   export *

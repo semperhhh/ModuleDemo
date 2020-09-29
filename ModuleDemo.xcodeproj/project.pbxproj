@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7401663C1BC3E576A2CDAF22 /* Pods_ModuleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C4D157E39655C404C3A746 /* Pods_ModuleDemo.framework */; };
+		2171C8DE37B4BDADF613F3AA /* libPods-ModuleDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AFF9E4E4065234EC1508C3 /* libPods-ModuleDemo.a */; };
 		DA024190250FC2BA00F25A7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA02418F250FC2BA00F25A7D /* AppDelegate.m */; };
 		DA024193250FC2BA00F25A7D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA024192250FC2BA00F25A7D /* SceneDelegate.m */; };
 		DA024196250FC2BA00F25A7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA024195250FC2BA00F25A7D /* ViewController.m */; };
@@ -29,11 +29,12 @@
 		DA313F0C2519FDF1009A6442 /* Mediator_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA313F0B2519FDF1009A6442 /* Mediator_Extension.swift */; };
 		DA3B82FD251070CA0009FCA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B82FC251070CA0009FCA4 /* SwiftViewController.swift */; };
 		DA3B8301251071CD0009FCA4 /* OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3B8300251071CD0009FCA4 /* OCViewController.m */; };
+		DACC7000252338470001A29D /* MessageTool-Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC6FFF252338470001A29D /* MessageTool-Bridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68AFF9E4E4065234EC1508C3 /* libPods-ModuleDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModuleDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		996B8CCBF9373766DCC88307 /* Pods-ModuleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleDemo.release.xcconfig"; path = "Target Support Files/Pods-ModuleDemo/Pods-ModuleDemo.release.xcconfig"; sourceTree = "<group>"; };
-		D9C4D157E39655C404C3A746 /* Pods_ModuleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuleDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA02418B250FC2BA00F25A7D /* ModuleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA02418E250FC2BA00F25A7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA02418F250FC2BA00F25A7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		DA3B82FE2510714C0009FCA4 /* ModuleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModuleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA3B82FF251071CD0009FCA4 /* OCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCViewController.h; path = ModuleDemo/OCModule/OCViewController.h; sourceTree = SOURCE_ROOT; };
 		DA3B8300251071CD0009FCA4 /* OCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCViewController.m; path = ModuleDemo/OCModule/OCViewController.m; sourceTree = SOURCE_ROOT; };
+		DACC6FFF252338470001A29D /* MessageTool-Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageTool-Bridge.swift"; sourceTree = "<group>"; };
 		F2AE442B858E0439A4818118 /* Pods-ModuleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleDemo.debug.xcconfig"; path = "Target Support Files/Pods-ModuleDemo/Pods-ModuleDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7401663C1BC3E576A2CDAF22 /* Pods_ModuleDemo.framework in Frameworks */,
+				2171C8DE37B4BDADF613F3AA /* libPods-ModuleDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +91,7 @@
 		17C88E527CDCF4A65363647A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D9C4D157E39655C404C3A746 /* Pods_ModuleDemo.framework */,
+				68AFF9E4E4065234EC1508C3 /* libPods-ModuleDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,6 +126,7 @@
 		DA02418D250FC2BA00F25A7D /* ModuleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DACC6FF92523378D0001A29D /* Bridge */,
 				DA313F002519FB48009A6442 /* SwiftMediator */,
 				DA313EC925199C38009A6442 /* Mediator */,
 				DA20A23825135B1C0003D8D9 /* OCModule */,
@@ -204,6 +207,14 @@
 			path = SwiftMediator;
 			sourceTree = "<group>";
 		};
+		DACC6FF92523378D0001A29D /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				DACC6FFF252338470001A29D /* MessageTool-Bridge.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,7 +226,6 @@
 				DA024187250FC2BA00F25A7D /* Sources */,
 				DA024188250FC2BA00F25A7D /* Frameworks */,
 				DA024189250FC2BA00F25A7D /* Resources */,
-				DB2DEC7D51996D407487FBF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,23 +305,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DB2DEC7D51996D407487FBF3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ModuleDemo/Pods-ModuleDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ModuleDemo/Pods-ModuleDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ModuleDemo/Pods-ModuleDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -328,6 +321,7 @@
 				DA313E9C25188DD3009A6442 /* UIViewController+Style.m in Sources */,
 				DA313F062519FB91009A6442 /* SwiftMediatorViewController.swift in Sources */,
 				DA313E9025188C8C009A6442 /* OCFirstViewController.m in Sources */,
+				DACC7000252338470001A29D /* MessageTool-Bridge.swift in Sources */,
 				DA0241A1250FC2BB00F25A7D /* main.m in Sources */,
 				DA20D1382513542400693269 /* ZPHLineView.m in Sources */,
 				DA313E9425188C98009A6442 /* OCSecondViewController.m in Sources */,

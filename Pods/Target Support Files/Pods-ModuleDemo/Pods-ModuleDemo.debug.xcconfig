@@ -1,12 +1,13 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/CTMediator" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/OCTool" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CTMediator/CTMediator.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/OCTool/OCTool.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers"
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "Alamofire" -framework "CFNetwork" -framework "CTMediator" -framework "CoreGraphics" -framework "Foundation" -framework "Masonry" -framework "OCTool" -framework "SnapKit" -framework "UIKit"
-OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/CTMediator" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/OCTool"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/CTMediator" "${PODS_CONFIGURATION_BUILD_DIR}/Lotusoot" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/OCTool" "${PODS_CONFIGURATION_BUILD_DIR}/SPToolModule" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Lotusoot/Lotusoot.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SPToolModule/SPToolModule.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.modulemap" -fmodule-map-file="${PODS_ROOT}/Headers/Public/CTMediator/CTMediator.modulemap"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"Alamofire" -l"CTMediator" -l"Lotusoot" -l"Masonry" -l"OCTool" -l"SPToolModule" -l"SnapKit" -framework "CFNetwork" -framework "CoreGraphics" -framework "Foundation" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Lotusoot/Lotusoot.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SPToolModule/SPToolModule.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.modulemap" -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/CTMediator/CTMediator.modulemap"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/Lotusoot" "${PODS_CONFIGURATION_BUILD_DIR}/SPToolModule" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit"
 USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

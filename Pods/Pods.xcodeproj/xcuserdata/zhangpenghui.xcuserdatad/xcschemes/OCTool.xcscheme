@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8E356BD05FE84DF2E999CB9F075DC31C"
-               BuildableName = "OCTool.framework"
+               BuildableName = "libOCTool.a"
                BlueprintName = "OCTool"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

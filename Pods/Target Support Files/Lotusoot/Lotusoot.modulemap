@@ -1,0 +1,6 @@
+module Lotusoot {
+  umbrella header "Lotusoot-umbrella.h"
+
+  export *
+  module * { export * }
+}

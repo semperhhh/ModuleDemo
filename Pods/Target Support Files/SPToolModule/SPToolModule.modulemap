@@ -1,0 +1,6 @@
+module SPToolModule {
+  umbrella header "SPToolModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

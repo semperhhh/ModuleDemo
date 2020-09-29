@@ -16,38 +16,49 @@ PODS:
     - AFNetworking/NSURLSession
   - Alamofire (5.2.2)
   - CTMediator (44)
+  - Lotusoot (0.0.3)
   - Masonry (1.1.0)
   - OCTool (0.0.1)
   - SnapKit (5.0.1)
+  - SPToolModule (0.0.1):
+    - SPToolModule/MessageTool (= 0.0.1)
+  - SPToolModule/MessageTool (0.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0.1)
   - Alamofire (~> 5.2)
   - CTMediator
+  - Lotusoot
   - Masonry (~> 1.1.0)
   - OCTool (from `./LocalLib/OCTool`)
   - SnapKit (~> 5.0.1)
+  - SPToolModule (from `./LocalLib/SPToolModule`)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - Alamofire
     - CTMediator
+    - Lotusoot
     - Masonry
     - SnapKit
 
 EXTERNAL SOURCES:
   OCTool:
     :path: "./LocalLib/OCTool"
+  SPToolModule:
+    :path: "./LocalLib/SPToolModule"
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   CTMediator: 933dba523da87bf875e4a7e8728945fbc512f1d2
+  Lotusoot: 3586d74e4a3d075e5197f8afd7e44b15d6497feb
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OCTool: 79696cda49f267f31f7e1031c95a6bcb7a905d25
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SPToolModule: 78cf07e041007b88a01aec2a560fc6ba06f68b81
 
-PODFILE CHECKSUM: d955fe445131db8e2228945e4ac08b35d8dd2d7f
+PODFILE CHECKSUM: 6e0ccd93d32f501d0ea1d73e7829367fd913c610
 
 COCOAPODS: 1.9.3

@@ -8,6 +8,7 @@
 
 #import "OCViewController.h"
 #import "UIViewController+Style.h"
+#import <ModuleDemo-Swift.h>
 
 @interface OCViewController ()
 
@@ -21,6 +22,8 @@
  
     NSLog(@"ocviewcontroller userId = %@", self.userId);
     [self initWithStyle];
+    
+    [[[MessageTool_Bridge alloc]init]messageTest];
 }
 
 /*
