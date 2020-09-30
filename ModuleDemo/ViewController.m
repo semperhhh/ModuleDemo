@@ -19,6 +19,7 @@
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
+
 @end
 
 @implementation ViewController
@@ -57,11 +58,13 @@
 -(void)swiftButtonAction {
     NSLog(@"swiftButtonAction");
     
+    /*
     //正常调用
-//    SwiftViewController *controller = [[SwiftViewController alloc]init];
-//    controller.userId = @"654321";
-//    [self.navigationController pushViewController:controller animated:true];
-
+    SwiftViewController *controller = [[SwiftViewController alloc]init];
+    controller.userId = @"654321";
+    [self.navigationController pushViewController:controller animated:true];
+     */
+    
     //反射
     NSString *nameSpace = [NSBundle mainBundle].infoDictionary[@"CFBundleExecutable"];
     NSString *string = [NSString stringWithFormat:@"%@.SwiftViewController", nameSpace];
@@ -92,11 +95,24 @@
     [self.navigationController pushViewController:controller animated:true];
 }
 
+// MARK: 自定义协议实现
+-(void)customExtensionAction {
+    
+    /*
+     自定义协议
+     */
+    id vc = [[NSClassFromString(@"ModuleDemo.CustomRouteViewController") alloc]init];
+    id <CustomRoute> route = vc;
+    if (route) {
+        [route jumpWithTitle:@"自定义协议" userId:@"141144"];
+    }
+}
+
 // MARK: UITableViewDelegate
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 3;
+    return 4;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -116,6 +132,7 @@
             cell.textLabel.text = @"CTMediator";
             break;
         default:
+            cell.textLabel.text = @"自定义协议实现";
             break;
     }
     return cell;
@@ -134,6 +151,9 @@
             break;
         case 2:
             [self mediatorButtonAction];
+            break;
+        case 3:
+            [self customExtensionAction];
             break;
         default:
             break;

@@ -10,7 +10,7 @@ import UIKit
 import CTMediator
 
 class SwiftViewController: UIViewController {
-    
+
     /// 会员id
     @objc var userId: String?
     @objc var navigationTitle: String?

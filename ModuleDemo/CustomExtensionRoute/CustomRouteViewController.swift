@@ -1,23 +1,33 @@
 //
-//  SwiftMediatorViewController.swift
+//  CustomRouteViewController.swift
 //  ModuleDemo
 //
-//  Created by zph on 2020/9/22.
+//  Created by zph on 2020/9/30.
 //  Copyright © 2020 zph. All rights reserved.
 //
 
 import UIKit
 
-class SwiftMediatorViewController: UIViewController {
+class CustomRouteViewController: UIViewController,CustomRoute {
     
-    var userId: String = ""
+    func jump(title: String, userId: String) {
+    
+        let navi: UINavigationController = UIApplication.shared.windows.first?.rootViewController as! UINavigationController
+        navi.pushViewController(self, animated: true)
+        
+        self.title = title
+        self.userId = userId
+    }
+    
+    var userId: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.view.backgroundColor = UIColor.systemYellow
+        self.view.backgroundColor = UIColor.red
+        print("CustomRouteViewController userid -- ", userId!)
     }
     
 
